@@ -18,11 +18,14 @@ dotnet tool uninstall -g dotnet-aspnet-codegenerator
 dotnet tool install -g dotnet-aspnet-codegenerator
 dotnet tool update -g dotnet-aspnet-codegenerator
 ```
+- Change password of Postgresql Database in connection string "MyProjConn" as per your system in below file:
+> RegisterUserAPI/appsettings.json
+
 - Create Database from your Entity Classes/Models:
 ```shell
 dotnet ef database update --verbose
 ```
-- and now click on the Run & Debug button in left bar of VS Code and then select "WebApp & RegisterUserAPI" from the "RUN AND DEBUG" drop down and click on the Start Debugging button which is on left to this drop down list or press F5 to run the project. If you have [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download) installed with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) Visual Studio Code extension then you will be able to run it easily.
+- Now click on the Run & Debug button in left bar of VS Code and then select "WebApp & RegisterUserAPI" from the "RUN AND DEBUG" drop down and click on the Start Debugging button which is on left to this drop down list or press F5 to run the project. If you have [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download) installed with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) Visual Studio Code extension then you will be able to run it easily.
 
 - If it will show a warning dialog box for https/ssl certificate then trust that.
 
